@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="verdecesped">#7CFC00</color>
+    <color name="verdelima">#32CD32</color>
+    <color name="bosqueverde">#228B22</color>
+    <color name="verde">#008000</color>
+    <color name="verdeoscuro">#006400</color>
+    <color name="medioverde">#3CB371</color>
+    <color name="marverde">#2E8B57</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="azulfondo">#EAF9F6</color>
 </resources>

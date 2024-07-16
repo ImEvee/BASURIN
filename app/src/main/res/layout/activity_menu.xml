@@ -5,41 +5,44 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Menu">
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/btnEnviarReporte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="84dp"
-        android:text="Basurin"
-        android:textColor="@color/verdeoscuro"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:layout_marginTop="50dp"
+        android:hint="Reporte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEduca" />
+
+    <Button
+        android:id="@+id/btnRutas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:hint="Rutas"
+        app:layout_constraintBottom_toTopOf="@+id/btnAvisos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <Button
+        android:id="@+id/btnAvisos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="276dp"
-        android:text="Educación para un mundo más limpio"
-        android:textAlignment="center"
-        android:textSize="30sp"
+        android:layout_marginBottom="39dp"
+        android:hint="Avisos"
+        app:layout_constraintBottom_toTopOf="@+id/btnEduca"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnEmpezar"
+        android:id="@+id/btnEduca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="204dp"
-        android:text="Empezar"
+        android:layout_marginBottom="298dp"
+        android:hint="Educa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

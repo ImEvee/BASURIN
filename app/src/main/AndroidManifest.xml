@@ -13,6 +13,36 @@
         android:theme="@style/Theme.BASURIN"
         tools:targetApi="31">
         <activity
+            android:name=".EducaReduce"
+            android:exported="false" />
+        <activity
+            android:name=".EducaInorganico"
+            android:exported="false" />
+        <activity
+            android:name=".EducaOrganico"
+            android:exported="false" />
+        <activity
+            android:name=".Rutas"
+            android:exported="false" />
+        <activity
+            android:name=".Reportes"
+            android:exported="false" />
+        <activity
+            android:name=".Avisos"
+            android:exported="false" />
+        <activity
+            android:name=".EducaRecicla"
+            android:exported="false" />
+        <activity
+            android:name=".EducaReutiliza"
+            android:exported="false" />
+        <activity
+            android:name=".Educa"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
