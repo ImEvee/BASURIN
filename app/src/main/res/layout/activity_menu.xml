@@ -13,6 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:hint="Reporte"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEduca" />
@@ -23,6 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="49dp"
         android:hint="Rutas"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btnAvisos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -33,6 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="39dp"
         android:hint="Avisos"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btnEduca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -43,7 +49,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="298dp"
         android:hint="Educa"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -18,6 +20,31 @@ class Educa : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val icon1: ImageButton = findViewById(R.id.icon1)
+        val icon2: ImageButton = findViewById(R.id.icon2)
+        val icon3: ImageButton = findViewById(R.id.icon3)
+        val icon4: ImageButton = findViewById(R.id.icon4)
+        val icon5: ImageButton = findViewById(R.id.icon5)
+
+        icon1.setOnClickListener {
+            startActivity(Intent(this, Rutas::class.java))
+        }
+
+        icon2.setOnClickListener {
+            startActivity(Intent(this, Avisos::class.java))
+        }
+
+        icon3.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+
+        icon4.setOnClickListener {
+            startActivity(Intent(this, Educa::class.java))
+        }
+
+        icon5.setOnClickListener {
+            startActivity(Intent(this, Reportes::class.java))
         }
 
         // Configurar AutoCompleteTextView y manejar selecciones
@@ -54,6 +81,13 @@ class Educa : AppCompatActivity() {
                 "Inorganico" -> startActivity(Intent(this, EducaInorganico::class.java))
                 else -> {/* Manejar opción por defecto si es necesario */}
             }
+        }
+        val btnProhibido = findViewById<Button>(R.id.btnProhibido)
+
+
+        btnProhibido.setOnClickListener{
+            val intent = Intent(this, EducaProhibido::class.java)
+            startActivity(intent);
         }
     }
 
