@@ -42,7 +42,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:inputType="none"
-            android:text="Regla de als 3R"
+            android:text="Regla de las 3R"
             android:textColor="@android:color/black"
             tools:ignore="LabelFor" />
 
@@ -78,6 +78,15 @@
             tools:ignore="LabelFor" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnProhibido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prohibido tirar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="479dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
