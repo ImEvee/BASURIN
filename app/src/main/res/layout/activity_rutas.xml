@@ -41,49 +41,52 @@
         app:layout_constraintVertical_bias="0.957">
 
         <ImageButton
-            android:id="@+id/icon1"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_margin="8dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:scaleType="fitCenter"
-            android:src="@drawable/camionicono" />
-
-        <ImageButton
-            android:id="@+id/icon2"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:id="@+id/camionRuta"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            android:src="@drawable/notificacionicono" />
+            app:srcCompat="@drawable/camionbasura" />
 
         <ImageButton
-            android:id="@+id/icon3"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_margin="8dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:scaleType="fitCenter"
-            android:src="@drawable/principalicono" />
-
-        <ImageButton
-            android:id="@+id/icon4"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_margin="8dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:scaleType="fitCenter"
-            android:src="@drawable/bookicono" />
-
-        <ImageButton
-            android:id="@+id/icon5"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:id="@+id/notificar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            android:src="@drawable/reporteicono" />
+            app:srcCompat="@drawable/notificacion" />
+
+
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/hogar" />
+
+        <ImageButton
+            android:id="@+id/educar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/libro" />
+
+        <ImageButton
+            android:id="@+id/reportar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/hoja" />
+
 
     </LinearLayout>
 

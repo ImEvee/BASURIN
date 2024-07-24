@@ -29,11 +29,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="37dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/verdecesped"
-        app:boxBackgroundMode="outline"
-        app:boxStrokeWidth="1dp"
-        app:hintAnimationEnabled="true"
-        app:hintEnabled="true"
+        app:boxStrokeColor="@color/verdelima"
+        app:boxBackgroundColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,13 +40,15 @@
             android:id="@+id/autoCompleteTextView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
             android:layout_weight="1"
             android:background="@color/verdelima"
-            android:inputType="none"
             android:text="Regla de las 3R"
+            android:inputType="none"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="italic"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="LabelFor" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -62,11 +61,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/verdecesped"
-        app:boxBackgroundMode="outline"
-        app:boxStrokeWidth="1dp"
-        app:hintAnimationEnabled="true"
-        app:hintEnabled="true"
+        app:boxStrokeColor="@color/verdelima"
+        app:boxBackgroundColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +75,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:background="@color/verdeoscuro"
+            android:background="@color/verdelima"
             android:inputType="none"
             android:text="Clasificacion de basura"
             android:textColor="@color/white"
@@ -97,7 +93,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="46dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/verde_bonito"
+        android:backgroundTint="@color/verdelima"
         android:text="Prohibido tirar"
         android:textSize="20sp"
         android:textStyle="italic"
@@ -132,49 +128,52 @@
         app:layout_constraintVertical_bias="0.957">
 
         <ImageButton
-            android:id="@+id/icon1"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_margin="8dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:scaleType="fitCenter"
-            android:src="@drawable/camionicono" />
-
-        <ImageButton
-            android:id="@+id/icon2"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:id="@+id/camionRuta"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            android:src="@drawable/notificacionicono" />
+            app:srcCompat="@drawable/camionbasura" />
 
         <ImageButton
-            android:id="@+id/icon3"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_margin="8dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:scaleType="fitCenter"
-            android:src="@drawable/principalicono" />
-
-        <ImageButton
-            android:id="@+id/icon4"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_margin="8dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:scaleType="fitCenter"
-            android:src="@drawable/bookicono" />
-
-        <ImageButton
-            android:id="@+id/icon5"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:id="@+id/notificar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            android:src="@drawable/reporteicono" />
+            app:srcCompat="@drawable/notificacion" />
+
+
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/hogar" />
+
+        <ImageButton
+            android:id="@+id/educar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/libro" />
+
+        <ImageButton
+            android:id="@+id/reportar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/hoja" />
+
 
     </LinearLayout>
 

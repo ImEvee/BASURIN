@@ -7,6 +7,7 @@ import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -21,11 +22,11 @@ class Educa : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val icon1: ImageButton = findViewById(R.id.icon1)
-        val icon2: ImageButton = findViewById(R.id.icon2)
-        val icon3: ImageButton = findViewById(R.id.icon3)
-        val icon4: ImageButton = findViewById(R.id.icon4)
-        val icon5: ImageButton = findViewById(R.id.icon5)
+        val icon1: ImageButton = findViewById(R.id.camionRuta)
+        val icon2: ImageButton = findViewById(R.id.notificar)
+        val icon3: ImageButton = findViewById(R.id.home)
+        val icon4: ImageButton = findViewById(R.id.educar)
+        val icon5: ImageButton = findViewById(R.id.reportar)
 
         icon1.setOnClickListener {
             startActivity(Intent(this, Rutas::class.java))
@@ -56,13 +57,14 @@ class Educa : AppCompatActivity() {
 
         autoCompleteTextView.setOnItemClickListener { parent, _, position, _ ->
             val selectedOption = parent.getItemAtPosition(position) as String
+            autoCompleteTextView.setText(selectedOption)  // Establece el texto seleccionado
+            autoCompleteTextView.dismissDropDown()  // Cierra el menú desplegable
 
-            // Redirigir a la actividad correspondiente según la opción seleccionada
+            // Redirigir a la actividad correspondiente
             when (selectedOption) {
                 "Reutiliza" -> startActivity(Intent(this, EducaReutiliza::class.java))
                 "Reduce" -> startActivity(Intent(this, EducaReduce::class.java))
                 "Recicla" -> startActivity(Intent(this, EducaRecicla::class.java))
-                else -> {/* Manejar opción por defecto si es necesario */}
             }
         }
         // Configurar AutoCompleteTextView y manejar selecciones
@@ -74,7 +76,8 @@ class Educa : AppCompatActivity() {
 
         autoCompleteTextView2.setOnItemClickListener { parent, _, position, _ ->
             val selectedOption = parent.getItemAtPosition(position) as String
-
+            autoCompleteTextView.setText(selectedOption)  // Establece el texto seleccionado
+            autoCompleteTextView.dismissDropDown()  // Cierra el menú desplegable
             // Redirigir a la actividad correspondiente según la opción seleccionada
             when (selectedOption) {
                 "Organico" -> startActivity(Intent(this, EducaOrganico::class.java))

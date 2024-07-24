@@ -18,11 +18,11 @@ class EducaProhibido : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val icon1: ImageButton = findViewById(R.id.icon1)
-        val icon2: ImageButton = findViewById(R.id.icon2)
-        val icon3: ImageButton = findViewById(R.id.icon3)
-        val icon4: ImageButton = findViewById(R.id.icon4)
-        val icon5: ImageButton = findViewById(R.id.icon5)
+        val icon1: ImageButton = findViewById(R.id.camionRuta)
+        val icon2: ImageButton = findViewById(R.id.notificar)
+        val icon3: ImageButton = findViewById(R.id.home)
+        val icon4: ImageButton = findViewById(R.id.educar)
+        val icon5: ImageButton = findViewById(R.id.reportar)
 
         icon1.setOnClickListener {
             startActivity(Intent(this, Rutas::class.java))
