@@ -11,13 +11,13 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="Educa"
-        android:textColor="@color/verdeoscuro"
-        android:textSize="50sp"
-        android:textStyle="bold"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="EDUCA"
+        android:textColor="@color/verde1"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,12 +42,12 @@
             android:layout_height="match_parent"
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:background="@color/verdelima"
-            android:text="Regla de las 3R"
+            android:background="@color/verde2"
+            android:fontFamily="@font/nunito_black"
             android:inputType="none"
+            android:text="Regla de las 3R"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:textStyle="italic"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="LabelFor" />
 
@@ -75,12 +75,12 @@
             android:layout_height="match_parent"
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:background="@color/verdelima"
+            android:background="@color/verde2"
+            android:fontFamily="@font/nunito_black"
             android:inputType="none"
             android:text="Clasificacion de basura"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:textStyle="italic"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="LabelFor" />
 
@@ -93,10 +93,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="46dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/verdelima"
+        android:backgroundTint="@color/verde1"
         android:text="Prohibido tirar"
+        android:fontFamily="@font/nunito_black"
+        android:textColor="@color/colorPrincipal"
         android:textSize="20sp"
-        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,8 +105,9 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
+        android:layout_width="179dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,10 +115,11 @@
         app:srcCompat="@drawable/logobasurin" />
 
     <LinearLayout
-        android:id="@+id/bottom_menueduca"
+        android:id="@+id/bottom_menuorganico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="0.35dp"
@@ -124,59 +127,59 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.957">
 
         <ImageButton
-            android:id="@+id/camionRuta"
+            android:id="@+id/btnRutas"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/camionbasura" />
+            app:srcCompat="@drawable/rutasicono" />
 
         <ImageButton
-            android:id="@+id/notificar"
+            android:id="@+id/btnNotificacion"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/notificacion" />
+            app:srcCompat="@drawable/notificacionicono" />
 
 
 
         <ImageButton
-            android:id="@+id/home"
+            android:id="@+id/btnInicio"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/hogar" />
+            app:srcCompat="@drawable/inicioicono" />
 
         <ImageButton
-            android:id="@+id/educar"
+            android:id="@+id/btnEduca"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/libro" />
+            app:srcCompat="@drawable/educaicono" />
 
         <ImageButton
-            android:id="@+id/reportar"
+            android:id="@+id/btnReportes"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/hoja" />
+            app:srcCompat="@drawable/reportesicono" />
 
 
     </LinearLayout>
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

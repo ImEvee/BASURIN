@@ -12,4 +12,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="azulfondo">#EAF9F6</color>
+
+    <color name="colorPrincipal">#163343</color>
+    <color name="verde1">#75d363</color>
+    <color name="verde2">#074219</color>
+    <color name="verde3">#3B7D4C</color>
+    <color name="azulMenta">#d0f4ea</color>
+
 </resources>

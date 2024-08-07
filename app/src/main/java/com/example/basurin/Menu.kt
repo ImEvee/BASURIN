@@ -2,7 +2,7 @@ package com.example.basurin
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -14,39 +14,58 @@ class Menu : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_menu)
 
-        val btnRutas = findViewById<Button>(R.id.btnRutas)
-        val btnAvisos = findViewById<Button>(R.id.btnAvisos)
-        val btnEduca = findViewById<Button>(R.id.btnEduca)
-        val btnReportes = findViewById<Button>(R.id.btnEnviarReporte)
-
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        btnRutas.setOnClickListener{
-            val intent = Intent(this, Rutas::class.java)
-            startActivity(intent);
+        // Agrega el click listener en el onCreate
+        val btnRutas = findViewById<ImageView>(R.id.btnRutas)
+        btnRutas.setOnClickListener {
+            abrirRutas()
         }
 
-        btnAvisos.setOnClickListener{
-            val intent = Intent(this, Avisos::class.java)
-            startActivity(intent);
-        }
-
+        val btnEduca = findViewById<ImageView>(R.id.btnEduca)
         btnEduca.setOnClickListener{
-            val intent = Intent(this, Educa::class.java)
-            startActivity(intent);
+            abrirEduca()
         }
 
+        val btnReportes = findViewById<ImageView>(R.id.btnReportes)
         btnReportes.setOnClickListener{
-            val intent = Intent(this, Reportes::class.java)
-            startActivity(intent);
+            abrirReportes()
         }
 
+        val btnAvisos = findViewById<ImageView>(R.id.btnAvisos)
+        btnAvisos.setOnClickListener{
+            abrirAvisos()
+        }
+    }
 
+    // Abre la actividad Rutas
+    private fun abrirRutas() {
+        val intent = Intent(this, Rutas::class.java)
+        startActivity(intent)
+    }
+
+    private fun abrirEduca(){
+
+        val intent = Intent(this,Educa::class.java)
+        startActivity(intent)
+
+    }
+
+    private fun abrirReportes(){
+
+        val intent = Intent(this,Reportes::class.java)
+        startActivity(intent)
+
+    }
+
+    private fun abrirAvisos(){
+
+        val intent = Intent(this,Avisos::class.java)
+        startActivity(intent)
 
     }
 }
