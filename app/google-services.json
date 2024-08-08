@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1082104474198",
+    "firebase_url": "https://basurin-506ae-default-rtdb.firebaseio.com",
+    "project_id": "basurin-506ae",
+    "storage_bucket": "basurin-506ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082104474198:android:c88322786c281e05a329f7",
+        "android_client_info": {
+          "package_name": "com.example.basurin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLo9aNRw_wanoBfluPWbhGyavXYiYup-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
