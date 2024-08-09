@@ -10,78 +10,66 @@
 
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="49dp"
+        android:fontFamily="@font/nunito_black"
         android:text="EDUCA"
-        android:textColor="@color/verdeoscuro"
-        android:textSize="50sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        android:textColor="@color/colorPrincipal"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="62dp"
+        android:fontFamily="@font/nunito_black"
         android:text="Reutiliza"
-        android:textColor="@color/verdelima"
+        android:textColor="@color/verde1"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0" />
+
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="42dp"
+        android:layout_marginBottom="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView7"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:srcCompat="@drawable/reutiliza" />
+        app:srcCompat="@drawable/reutiliza"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="75dp"
+        android:layout_marginBottom="112dp"
         android:background="@color/bosqueverde"
         android:gravity="center"
         android:padding="16dp"
-        android:text="Implica utilizar productos y materiales varias veces antes de desecharlos, en lugar de desecharlos después de un solo uso. Esto puede incluir la reparación de objetos, la compra de productos de segunda mano y la reutilización de envases y recipientes."
+        android:text="Da una segunda vida a los objetos antes de desecharlos."
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        app:layout_constraintVertical_bias="0.911" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:layout_marginBottom="354dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.949"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.052"
-        app:srcCompat="@drawable/logobasurin" />
-
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <LinearLayout
-        android:id="@+id/bottom_menureutiliza"
+        android:id="@+id/bottom_menuorganico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="0.35dp"
@@ -89,57 +77,57 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.957">
 
         <ImageButton
-            android:id="@+id/camionRuta"
+            android:id="@+id/btnRutas"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/camionbasura" />
+            app:srcCompat="@drawable/rutasicono" />
 
         <ImageButton
-            android:id="@+id/notificar"
+            android:id="@+id/btnNotificacion"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/notificacion" />
+            app:srcCompat="@drawable/notificacionicono" />
 
 
 
         <ImageButton
-            android:id="@+id/home"
+            android:id="@+id/btnInicio"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/hogar" />
+            app:srcCompat="@drawable/inicioicono" />
 
         <ImageButton
-            android:id="@+id/educar"
+            android:id="@+id/btnEduca"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/libro" />
+            app:srcCompat="@drawable/educaicono" />
 
         <ImageButton
-            android:id="@+id/reportar"
+            android:id="@+id/btnReportes"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/hoja" />
+            app:srcCompat="@drawable/reportesicono" />
 
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

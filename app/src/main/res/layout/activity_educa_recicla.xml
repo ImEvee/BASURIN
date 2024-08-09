@@ -53,11 +53,11 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/verde2"
+        android:background="@color/bosqueverde"
         android:fontFamily="@font/nunito_bold"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Es el proceso de convertir materiales usados en nuevos productos, reduciendo así la necesidad de recursos naturales vírgenes y minimizando la cantidad de desechos que van a parar a vertederos. El reciclaje ayuda a conservar energía y reduce la contaminación del aire, el agua y el suelo."
+        android:text="Separa y transforma los materiales para que puedan ser utilizados de nuevo."
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,19 +65,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.776" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="152dp"
-        android:layout_height="144dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.001"
-        app:srcCompat="@drawable/logobasurin" />
+        app:layout_constraintVertical_bias="0.812" />
 
     <LinearLayout
         android:id="@+id/bottom_menuorganico"

@@ -8,107 +8,182 @@
     tools:context=".EducaProhibido">
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="253dp"
+        android:fontFamily="@font/nunito_black"
         android:text="EDUCA"
-        android:textColor="@color/verdeoscuro"
-        android:textSize="50sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.747"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:text="Prohibido tirar"
-        android:textColor="@color/verdelima"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.217"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="236dp"
-        android:text="Pilas y baterias  "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="14dp"
-        android:text=" Medicamentos  "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="Material medico  "
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="88dp"
-        android:text="Productos quimicos  "
-        app:layout_constraintEnd_toEndOf="@+id/textView29"
-        app:layout_constraintStart_toStartOf="@+id/textView25"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Neumáticos usados"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
+        android:textColor="@color/colorPrincipal"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintHorizontal_bias="0.116"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logobasurin" />
+        app:layout_constraintVertical_bias="0.107" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Agujas y jeringas: Pueden causar heridas y transmitir enfermedades."
+        android:textAlignment="textStart"
+        android:textColor="@color/verde3"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Aparatos electrónicos: Como celulares, computadoras y electrodomésticos, contienen metales y químicos que son nocivos si se liberan al medio ambiente."
+        android:textAlignment="textStart"
+        android:textColor="@color/verde3"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Medicamentos vencidos: Contienen sustancias que pueden contaminar el agua y el suelo."
+        android:textAlignment="textStart"
+        android:textColor="@color/verde3"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Material de curación: Vendajes, gasas y otros residuos que pueden estar contaminados."
+        android:textAlignment="textStart"
+        android:textColor="@color/verde3"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.479" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Cables y accesorios: Estos también contienen materiales que no son biodegradables y pueden dañar el entorno."
+        android:textAlignment="textStart"
+        android:textColor="@color/verde3"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Pilas y baterías: Liberan metales pesados y ácidos que contaminan el suelo y el agua."
+        android:textAlignment="textStart"
+        android:textColor="@color/verde3"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="Prohibido tirar"
+        android:textColor="@color/verde1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_black"
+        android:text="MATERIAL MEDICO"
+        android:textColor="@color/colorPrincipal"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_black"
+        android:text="MATERIAL ELECTRÓNICO"
+        android:textColor="@color/colorPrincipal"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_black"
+        android:text="MATERIAL QUÍMICO"
+        android:textColor="@color/colorPrincipal"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
 
     <LinearLayout
-        android:id="@+id/bottom_menueduca"
+        android:id="@+id/bottom_menuorganico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="0.35dp"
@@ -116,56 +191,54 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.957">
 
         <ImageButton
-            android:id="@+id/camionRuta"
+            android:id="@+id/btnRutas"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/camionbasura" />
+            app:srcCompat="@drawable/rutasicono" />
 
         <ImageButton
-            android:id="@+id/notificar"
+            android:id="@+id/btnNotificacion"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/notificacion" />
+            app:srcCompat="@drawable/notificacionicono" />
 
 
 
         <ImageButton
-            android:id="@+id/home"
+            android:id="@+id/btnInicio"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/hogar" />
+            app:srcCompat="@drawable/inicioicono" />
 
         <ImageButton
-            android:id="@+id/educar"
+            android:id="@+id/btnEduca"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/libro" />
+            app:srcCompat="@drawable/educaicono" />
 
         <ImageButton
-            android:id="@+id/reportar"
+            android:id="@+id/btnReportes"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/hoja" />
-
+            app:srcCompat="@drawable/reportesicono" />
 
 
     </LinearLayout>

@@ -38,11 +38,11 @@ class Rutas : AppCompatActivity(), OnMapReadyCallback {
             insets
         }
 
-        val icon1: ImageButton = findViewById(R.id.camionRuta)
-        val icon2: ImageButton = findViewById(R.id.notificar)
-        val icon3: ImageButton = findViewById(R.id.home)
-        val icon4: ImageButton = findViewById(R.id.educar)
-        val icon5: ImageButton = findViewById(R.id.reportar)
+        val icon1: ImageButton = findViewById(R.id.btnRutas)
+        val icon2: ImageButton = findViewById(R.id.btnNotificacion)
+        val icon3: ImageButton = findViewById(R.id.btnInicio)
+        val icon4: ImageButton = findViewById(R.id.btnEduca)
+        val icon5: ImageButton = findViewById(R.id.btnReportes)
 
         icon1.setOnClickListener {
             startActivity(Intent(this, Rutas::class.java))

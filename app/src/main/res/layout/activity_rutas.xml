@@ -7,25 +7,32 @@
     android:layout_height="match_parent"
     tools:context=".Rutas">
 
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="415dp"
+        android:layout_height="184dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_view" />
+
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/txtMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="253dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/nunito_black"
         android:text="Rutas"
-        android:textColor="@color/verdeoscuro"
+        android:textColor="@color/colorPrincipal"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.886"
-        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/bottom_menueduca"
+        android:id="@+id/bottom_menuorganico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -37,70 +44,57 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13"
         app:layout_constraintVertical_bias="0.957">
 
         <ImageButton
-            android:id="@+id/camionRuta"
+            android:id="@+id/btnRutas"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/camionbasura" />
+            app:srcCompat="@drawable/rutasicono" />
 
         <ImageButton
-            android:id="@+id/notificar"
+            android:id="@+id/btnNotificacion"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/notificacion" />
+            app:srcCompat="@drawable/notificacionicono" />
 
 
-        <ImageButton
-            android:id="@+id/home"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_margin="16dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/hogar" />
 
         <ImageButton
-            android:id="@+id/educar"
+            android:id="@+id/btnInicio"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/libro" />
+            app:srcCompat="@drawable/inicioicono" />
 
         <ImageButton
-            android:id="@+id/reportar"
+            android:id="@+id/btnEduca"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/hoja" />
+            app:srcCompat="@drawable/educaicono" />
+
+        <ImageButton
+            android:id="@+id/btnReportes"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/reportesicono" />
 
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:layout_marginBottom="236dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logobasurin" />
 
     <fragment
         android:id="@+id/map"

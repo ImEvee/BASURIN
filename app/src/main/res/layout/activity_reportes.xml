@@ -7,17 +7,28 @@
     android:layout_height="match_parent"
     tools:context=".Reportes">
 
+
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="415dp"
+        android:layout_height="184dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_view" />
+
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/txtMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/nunito_black"
         android:text="Reportes"
-        android:textColor="@color/verdeoscuro"
-        android:textSize="45sp"
-        android:textStyle="bold"
+        android:textColor="@color/colorPrincipal"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="189dp"
         android:text="Enviar reporte"
-        android:backgroundTint="@color/verdelima"
+        android:backgroundTint="@color/verde"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -36,7 +47,7 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="181dp"
+        android:layout_marginTop="252dp"
         android:text="Explica tu motivo del reporte"
         android:textSize="25sp"
         android:textStyle="italic"
@@ -58,10 +69,11 @@
 
 
     <LinearLayout
-        android:id="@+id/bottom_menueduca"
+        android:id="@+id/bottom_menuorganico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="0.35dp"
@@ -69,55 +81,54 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.957">
 
         <ImageButton
-            android:id="@+id/camionRuta"
+            android:id="@+id/btnRutas"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/camionbasura" />
+            app:srcCompat="@drawable/rutasicono" />
 
         <ImageButton
-            android:id="@+id/notificar"
+            android:id="@+id/btnNotificacion"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/notificacion" />
+            app:srcCompat="@drawable/notificacionicono" />
 
 
 
         <ImageButton
-            android:id="@+id/home"
+            android:id="@+id/btnInicio"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/hogar" />
+            app:srcCompat="@drawable/inicioicono" />
 
         <ImageButton
-            android:id="@+id/educar"
+            android:id="@+id/btnEduca"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/libro" />
+            app:srcCompat="@drawable/educaicono" />
 
         <ImageButton
-            android:id="@+id/reportar"
+            android:id="@+id/btnReportes"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_margin="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/hoja" />
+            app:srcCompat="@drawable/reportesicono" />
 
 
     </LinearLayout>
