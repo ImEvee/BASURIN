@@ -48,10 +48,12 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.play.services.maps)
     implementation(libs.androidx.gridlayout)
+    implementation(libs.play.services.location)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
     implementation("com.google.firebase:firebase-database-ktx:21.0.0")
     implementation("com.google.android.gms:play-services-maps:19.0.0")
+    implementation ("androidx.core:core-ktx:1.10.1")
 }
